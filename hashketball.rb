@@ -204,11 +204,8 @@ def big_shoe_rebounds()
       #binding.pry
       stats.each do |misc, num|
         if stat == :shoe
-          binding.pry
-          if num > shoe_size
+          if shoe_size == 0
             shoe_size = num
-            mvpRebounds = name
-
           end
         end
 
