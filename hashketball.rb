@@ -207,9 +207,10 @@ def big_shoe_rebounds()
           if num > shoe_size
             shoe_size = num
             mvpRebounds = name
+            binding.pry
           end
         end
-        binding.pry
+        
       end
         #stats[:rebounds]
     end
