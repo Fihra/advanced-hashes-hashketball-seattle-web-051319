@@ -212,6 +212,7 @@ def big_shoe_rebounds()
               mvpRebound = game_hash[side][:players][name][:rebounds]
             end
           end
+        end
       end
     end
   end
