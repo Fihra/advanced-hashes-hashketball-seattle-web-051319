@@ -206,6 +206,7 @@ def big_shoe_rebounds()
         if stat == :shoe
           if shoe_size == 0
             shoe_size = num
+            binding.pry
           end
         end
 
