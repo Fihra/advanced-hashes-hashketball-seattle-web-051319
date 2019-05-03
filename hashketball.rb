@@ -203,7 +203,6 @@ def big_shoe_rebounds()
         stats[:shoe]
         binding.pry
         stats[:rebounds]
-      end
     end
   end
 end
