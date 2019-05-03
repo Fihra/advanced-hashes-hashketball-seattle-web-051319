@@ -196,11 +196,12 @@ def player_stats(playerName)
     end
 end
 
-def big_shoe_rebounds()
+def big_shoe_rebounds(playerName)
+  mvpRebounds = ""
   game_hash.each do |side, info|
-    info[:players].max_by do |name, stats|
+    info.each do |name, stats|
       #binding.pry
-        if name[:shoe] == stats[:shoe].values.max
+      stats.each do |misc, num|
         binding.pry
       end
         #stats[:rebounds]
