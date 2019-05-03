@@ -197,21 +197,5 @@ def player_stats(playerName)
 end
 
 def big_shoe_rebounds()
-  mvpRebounds = ""
-  shoe_size = 0
-  game_hash.each do |side, info|
-    info.each do |name, stats|
-      #binding.pry
-      stats.each do |misc, num|
-        if stat == :shoe
-          if shoe_size == 0
-            shoe_size = num
-            binding.pry
-          end
-        end
 
-      end
-        #stats[:rebounds]
-    end
-  end
 end
