@@ -197,14 +197,14 @@ def player_stats(playerName)
 end
 
 def big_shoe_rebounds()
-  shoeSize = 0
+  shoeSize = nil
   mvpRebound = nil
   game_hash.each do |side, info|
     info.each do |name, stats|
       if name == :players
         stats.each do |pStat, nums|
           if pStat == :shoe
-            if shoeSize == 0
+            if shoeSize == nil
               shoeSize = nums
               mvpRebound = game_hash[side][:players][name][:rebounds]
             elsif nums > shoeSize
