@@ -204,6 +204,7 @@ def big_shoe_rebounds()
       if name == :players
         stats.each do |pStat, nums|
           if pStat == :shoe
+            binding.pry
             #if shoeSize == 0
             shoeSize = nums
             binding.pry
