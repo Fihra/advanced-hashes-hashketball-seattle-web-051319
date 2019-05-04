@@ -203,10 +203,10 @@ def big_shoe_rebounds()
     info.each do |name, stats|
       if name == :players
         stats.each do |pStat, nums|
-          binding.pry
           if pStat == :shoe
             if shoeSize == 0
               shoeSize = nums
+              binding.pry
               mvpRebound = game_hash[side][:players][name][:rebounds]
             elsif nums > shoeSize
               shoeSize = nums
