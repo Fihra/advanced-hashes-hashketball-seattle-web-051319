@@ -211,7 +211,7 @@ def big_shoe_rebounds()
           elsif nums > shoeSize
             shoeSize = nums
             mvpRebound = game_hash[side][:players][name][:rebounds]
-            
+
           end
         end
       end
